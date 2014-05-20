@@ -1,0 +1,69 @@
+html, body {
+        height: 100%; width: 100%;
+        margin: 0; padding: 0;
+    }
+
+    body {
+        position: relative;
+        background-image: linear-gradient(0deg, transparent 99%, rgba(0,0,0,0.25) 99%, rgba(0,0,0,0.25)), linear-gradient(90deg, transparent 99%, rgba(0,0,0,0.25) 99%, rgba(0,0,0,0.25));
+        height:100%; background-size: 1in 1in;
+        background-position: 0 0, 1in 1in;
+        font-family: arial;
+    }
+    
+    h3 {
+    	margin: 0; padding: 1rem 0;
+    }
+    
+    .text-center { text-align: center; }
+    
+    .color-gray { color: #777; }
+    .color-black { color: black; }
+    .color-white { color: white; }
+
+    .device-type:after {
+        display: inline-block;
+    }
+    
+    .window-resolution {
+        position: absolute; bottom: 0; right: 0;
+        background-color: rgba(255,255,255,0.8);
+        padding: 0.5em;
+    }
+    
+    .size-cm { font-size: 0.6em; color: rgba(0,0,0,0.7); }
+
+    @media all and (max-height: 4.2in) and (max-width: 11in) and (orientation: landscape) {
+        body { background-color: rgba(220,0,0,0.5); }
+        .device-type:after {
+            content: 'phone-landscape';
+        }
+    }
+
+    @media all and (max-width: 4.2in) and (max-height: 11in) and (orientation: portrait) {
+        body { background-color: rgba(0,220,0,0.5); }
+        .device-type:after {
+            content: 'phone-portrait';
+        }
+    }
+
+    @media all and (min-height: 4.2in) and (max-height: 8.4in) and (orientation: landscape) {
+        body { background-color: rgba(0,0,220,0.5); }
+        .device-type:after {
+            content: 'tablet-landscape';
+        }
+    }
+
+    @media all and (min-width: 4.2in) and (max-width: 8.4in) and (orientation: portrait) {
+        body { background-color: rgba(220,220,0,0.5); }
+        .device-type:after {
+            content: 'tablet-portrait';
+        }
+    }
+
+    @media all and (min-width: 8.4in) and (orientation: portrait), all and (min-height: 11in) and (orientation: portrait), all and (min-height: 8.4in) and (orientation: landscape), all and (min-width: 11in) and (orientation: landscape) {
+        body { background-color: rgba(0,220,220,0.5); }
+        .device-type:after {
+            content: 'desktop';
+        }
+    }
