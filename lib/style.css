@@ -16,6 +16,7 @@ html, body {
     }
     
     .text-center { text-align: center; }
+    .inline-block { display: inline-block; }
     
     .color-gray { color: #777; }
     .color-black { color: black; }
@@ -31,7 +32,13 @@ html, body {
         padding: 0.5em;
     }
     
-    .size-cm { font-size: 0.6em; color: rgba(0,0,0,0.7); }
+    .size-cm, .size-rem { font-size: 0.6em; }
+    
+    .units-wrapper {
+        padding: 0.6rem;
+        background: rgba(0,0,0,0.8);
+        color: white;
+    }
 
     @media all and (max-height: 4.2in) and (max-width: 11in) and (orientation: landscape) {
         body { background-color: rgba(220,0,0,0.5); }
