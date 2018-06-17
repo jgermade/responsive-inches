@@ -1,3 +1,3 @@
 responsive-inches
 =================
-demo [http://demo.germade.es/screen](http://demo.germade.es/screen)
+demo [https://jgermade.github.io/responsive-inches/](https://jgermade.github.io/responsive-inches)
